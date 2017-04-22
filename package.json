@@ -1,0 +1,16 @@
+{
+  name: "sharedot",
+  version: "0.0.1",
+  description: "shared document collaboration tool",
+  main: "lib/index.js",
+  dependencies: {
+    ShareJS: "0.7.40",
+    ShareDB: "1.0.0"
+  },
+  repository: {
+    type: "git",
+    url: "git://github.com/thunderboltsid/sharedot.git"
+  },
+  author: "Siddharth Shukla, Sourabh Lal, Tom Wiesing",
+  license: "MIT"
+}
