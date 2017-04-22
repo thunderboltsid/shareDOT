@@ -16,7 +16,10 @@
 <!-- Initialize Quill editor -->
 <script>
   var quill = new Quill('#editor', {
-    theme: 'snow'
+    theme: 'snow',
+    "modules": {
+      "toolbar": false
+    }
   });
 
 quill.on('text-change', update);
