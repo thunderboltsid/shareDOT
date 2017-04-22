@@ -1,16 +1,23 @@
+
 {
-  name: "shareDOT",
-  version: "0.0.1",
-  description: "shared document collaboration tool",
-  main: "lib/index.js",
-  dependencies: {
-    ShareJS: "0.7.40",
-    ShareDB: "1.0.0"
+  "name": "shareDOT",
+  "version": "0.0.1",
+  "description": "document collaboration platform for markdown",
+  "main": "lib/server.js",
+  "scripts": {
+    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify lib/client.js -o static/dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/server.js"
   },
-  repository: {
-    type: "git",
-    url: "git://github.com/thunderboltsid/shareDOT.git"
+  "author": "Siddharth Shukla, Sourabh Lal, Tom Wiesing",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "sharedb": "^1.0.0-beta",
+    "websocket-json-stream": "^0.0.1",
+    "ws": "^1.1.0"
   },
-  author: "Siddharth Shukla, Sourabh Lal, Tom Wiesing",
-  license: "MIT"
+  "devDependencies": {
+    "browserify": "^13.0.1"
+  }
 }
