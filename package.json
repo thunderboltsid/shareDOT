@@ -1,5 +1,5 @@
 {
-  name: "sharedot",
+  name: "shareDOT",
   version: "0.0.1",
   description: "shared document collaboration tool",
   main: "lib/index.js",
