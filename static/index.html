@@ -30,7 +30,7 @@ function update(delta) {
   console.log('contents', contents);
   var html = "contents = " + JSON.stringify(contents, null, 2);
   if (delta) {
-    console.log('change', delta)
+    console.log('change', delta);
     html = "change = " + JSON.stringify(delta, null, 2) + "\n\n" + html;
   }
 }
