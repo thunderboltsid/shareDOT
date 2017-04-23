@@ -9,8 +9,36 @@
     </head>
     <body>
         
+        <!-- Login form -->
+      <div class="modal-dialog" id='loginform'>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+          </div>
+          <div class="modal-body">
+            <p>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-group">
+                <label for="document">Document</label>
+                <input type="text" class="form-control" id="document" placeholder="Enter document name">
+            </div>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id='doLogin'>Login</button>
+          </div>
+        </div>
+      </div>
+                
         <!-- Main Body -->
-        <div class="row">
+        <div class="row" style='display: none;' id='main'>
           <div id='editor'  class="col-md-6"></div>
           <div id='preview' class="col-md-6">Loading, please wait ...</div>
         </div>
