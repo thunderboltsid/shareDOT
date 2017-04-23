@@ -5,9 +5,9 @@
   "description": "document collaboration platform for markdown",
   "main": "lib/server.js",
   "scripts": {
-    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify lib/client.js -o static/dist/bundle.js",
+    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify lib/client/index.js -d -o static/dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lib/server.js"
+    "start": "node lib/server/index.js"
   },
   "author": "Siddharth Shukla, Sourabh Lal, Tom Wiesing",
   "license": "MIT",
